@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@import '../node_modules/animate.css/animate.min.css';
+@import url(https://fonts.googleapis.com/earlyaccess/scheherazade.css);
+@import url(https://fonts.googleapis.com/css?family=Bigshot+One);
+@import url('assets/css/fonts.scss');
+
+
+/*font-family: 'Scheherazade', serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --primary: #1b67b3;
+    /* blue */
+    --secondary: #F8F8F8;
+    /* gray */
+    --white: #ffffff;
+    /* white */
+    // --dark: #112d4e;
+    --dark: #36a448;
+    --dark-hover: #1b67b352;
+    /* black */
+    --paragraph: #213242;
+    --black:#000000
+
+    // --font-family: Scheherazade;
+    --font-family:  Cairo;
+}
+
+@media (max-width: 1024px) {
+    section {
+        background-attachment: fixed;
+    }
+}
+body{
+    background-color: var(--secondary);
+}
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--dark);
+    font-family: var(--font-family);
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: var(--secondary);
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: var(--primary);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    // left: calc(50% - 20px);
+}
+
+@media (max-width: 992px) {
+    section {
+        height: 100%;
+    }
+}
