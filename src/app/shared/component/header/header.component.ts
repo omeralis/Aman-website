@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  postionScroll =50;
+  positionScroll =50;
   visibilityCompare: boolean = false;
   public navbarCollapsed = true;
   langStart='ar';
@@ -21,13 +21,13 @@ export class HeaderComponent {
      }
 
   ngOnInit(): void {
-    this.changeLangage(this.langStart);
+    this.changeLanguage(this.langStart);
   }
   
-  cahangeBtn(){
+  changeBtn(){
     this.bntLang = !this.bntLang;
   }
-  changeLangage(lang: string) {
+  changeLanguage(lang: string) {
     console.log(lang)
     this.translateService.setDefaultLang(lang);
     this.translateService.use(lang);
@@ -56,7 +56,7 @@ export class HeaderComponent {
   // @HostListener('document:mousewheel', ['$event'])
   @HostListener('window:scroll', ['$event']) 
   scrollTop(event: any) {
-    if (window.pageYOffset > this.postionScroll) {
+    if (window.pageYOffset > this.positionScroll) {
       this.visibilityCompare = true;
       console.log(this.visibilityCompare)
     } else {

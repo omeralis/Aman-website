@@ -1,0 +1,22 @@
+<section>
+    <ul>
+        <li class="icon"><img class="fb" src="../../../../assets/img/menu/2.svg" alt="" srcset=""></li>
+        <li class="icon"><img  src="../../../../assets/img/menu/1.svg" alt="" srcset=""></li>
+        <li class="menu" (click)="openModal(template)">Menu</li>
+        <li class="icon"><img src="../../../../assets/img/menu/3.svg" alt="" srcset=""></li>
+        <li class="icon"><img src="../../../../assets/img/menu/4.svg" alt="" srcset=""></li>
+    </ul>
+</section>
+ 
+
+<ng-template #template>
+  <div class="modal-header ">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="close btn-close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Just a modal with a bunch of words inside, nothing serious.
+  </div>
+</ng-template>
