@@ -27,9 +27,9 @@ section::before {
 .content {
     text-align: center;
     color: var(--white);
-    background-image: url(../../../assets/img/about/2.svg), url(../../../assets/img/about/3.svg);
-    background-repeat: no-repeat;
-    background-size: 20% 20%;
+    // background-image: url(../../../assets/img/about/2.svg), url(../../../assets/img/about/3.svg);
+    // background-repeat: no-repeat;
+    // background-size: 20% 20%;
     padding: 40px 0;
     position: absolute;
     left: 0;
@@ -51,3 +51,4 @@ section::before {
         color: var(--secondary);
     }
 }
+

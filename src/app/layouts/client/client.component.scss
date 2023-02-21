@@ -2,3 +2,45 @@
     height: 100vh;
     padding: 60px;
 }
+
+.box-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.service-header {
+    position: relative;
+    top: 30px;
+}
+
+.box h4 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.box-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    width: 150PX;
+    height: 150PX;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #fafafb, #d3d3d4);
+    box-shadow: inset 1px -1px 30px 5px #9b9b9d73, -5px -5px 100px #ffffff;
+
+    img{
+        width: 85%;
+    }
+    .img-custom{
+        width: 55%;
+    }
+}

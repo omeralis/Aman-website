@@ -8,7 +8,7 @@
     background-color: transparent;
     align-items: center;
     display: flex;
-    height: 100px;
+    height:100px;
 }
 
 #header.unheader-scrolled {
@@ -20,11 +20,9 @@
     background: var(--white);
     box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0e3, 0 1px 2px 0 rgb(60 64 67 / 0%), 0 1px 3px 1px rgb(60 64 67 / 22%) !important;
 }
-
-#header .navbar {
+#header .navbar{
     width: 100%;
 }
-
 #header #logo h1 {
     font-size: 36px;
     margin: 0;
@@ -150,54 +148,71 @@ a>span:after {
     color: var(--black);
 }
 
-button.btn.digital-btn {
-    background-color: transparent;
-    color: var(--black);
-    border: 1px solid !important;
-    border-color: var(--white);
-    transition: color .5s ease;
-    border-radius: 30px;
-    transition: background-color .5s ease;
-
-    &::before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 30px;
-        height: 10px;
-        background: var(--black);
-        top: 14px;
-        bottom: 15px;
-        left: calc(55% - 100px);
-        border-radius: 50px;
-        transition: all 250ms ease-in;
-        animation: border-top-right 3s infinite alternate;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 30px;
-        height: 10px;
-        background: var(--black);
-        top: 14px;
-        bottom: 15px;
-        left: calc(55% - 100px);
-        border-radius: 50px;
-        transition: all 250ms ease-in;
-    }
-
-    &:hover::after {
+    button.btn.digital-btn {
+        background-color:transparent;
         color: var(--black);
-        background-color: transparent;
-        left: calc(66% - 100px);
-        transform: scaleY(1);
-        animation: border-bottom-left 3s infinite alternate;
+        border: 1px solid !important;
+        border-color: var(--white);
+        transition: color .5s ease;
+        border-radius: 30px;
+        transition: background-color .5s ease;
+        &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 10px;
+            background: var(--black);
+            top: 14px;
+            bottom: 15px;
+            left: calc(55% - 100px);
+            border-radius: 50px;
+            animation: border-top-right 4s infinite alternate;
+            transition: all 250ms ease-in;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 30px;
+            height: 10px;
+            background: var(--black);
+            top: 14px;
+            bottom: 15px;
+            left: calc(40% - 100px);
+            border-radius: 50px;
+            animation: border-top-right 4s infinite alternate;
+            transition: all 250ms ease-in;
+        }
+        // &:hover::after {
+        //     color: var(--black);
+        //     background-color: transparent;
+        //     left: calc(66% - 100px);
+        //     // transform: scaleY(1);
+            // animation: border-top-right 4s infinite alternate;
+
+        // }
+        
     }
-
-}
-
+  @keyframes border-top-right {
+    0%    {width:0px;  height:10px; border-radius: 50px;  left:calc(69% - 100px); top: 0; }
+    25%   {width:30px; height:10px; border-radius: 50px;  top:50px; }
+    50%   {width:30px; height:10px; border-radius: 50px;  top:50px;}
+    100%  {width:30px; height:10px; border-radius: 50px;  top:50px; left:calc(55% - 100px); }
+    
+  }
+//   @keyframes border-bottom-left {
+//     0%    {width:0px;   height:0px; border-radius: 50px; left:calc(66% - 100px);}
+//     50%   {width:0px;   height:0px; border-radius: 50px; }
+//     75%   {width:30px; height:0px; border-radius: 50px;}
+//     100%  {width:30px; height:10px; border-radius: 50px;}
+//   }
+  @keyframes border-bottom-left {
+    0%    {width:0px;   height:0px; opacity: 0;  right:calc(66% - 100px);}
+    50%   {width:0px;   height:0px; opacity: 0;}
+    75%   {width:30; height:0px; opacity: 1; border-radius: 50px; bottom:50px;}
+    100%  {width:30; height:10;opacity: 1; border-radius: 50px; bottom:50px;}
+  }
 
 // .button {
 //     font-family:Arial, Helvetica, sans-serif;
