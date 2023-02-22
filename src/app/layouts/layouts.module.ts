@@ -10,6 +10,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { ClientComponent } from './client/client.component';
 import { MarketingComponent } from './marketing/marketing.component';
 import { ContactComponent } from './contact/contact.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -28,6 +29,7 @@ import { ContactComponent } from './contact/contact.component';
     CommonModule,
     LayoutsRoutingModule,
     IconsModule,
+    CarouselModule
   ]
 })
 export class LayoutsModule { }

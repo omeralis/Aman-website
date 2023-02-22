@@ -3,21 +3,33 @@
       <!-- <nav class="navbar navbar-expand-lg" [ngClass]="visibilityCompare ? 'header-scrolled':'unheader-scrolled'"> -->
       <div class="container">
         <a class="navbar-brand" id="logo" (click)="onClick('hero')">
-          En
+          <div class="nav-wrapper">
+            <div class="sl-nav">
+              <ul>
+                <li><i class="fa fa-angle-down" aria-hidden="true"></i> <b>En</b>
+                  <div class="triangle"></div>
+                  <ul>
+                    <li (click)="changeLanguage('en')"><i class="sl-flag flag-de"><div id="germany"></div></i> <span class="active">En</span></li>
+                    <li  (click)="changeLanguage('ar')"><i class="sl-flag flag-usa"><div id="germany"></div></i> <span>Ar</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="search m-auto">
             <button type="button" class="btn digital-btn">DIGITAL MARKETING AGENCY</button>
             <!-- <div class="button">LOGIN</div> -->
           </div>
-          <div class="d-flex">
-            <img src="../../../../assets/img/logo/logo-b.w.png" alt="" srcset="">
-          </div>
+        </div>
+        <div class="d-flex">
+          <img src="../../../../assets/img/logo/logo-b.w.png" alt="" srcset="">
         </div>
       </div>
     </nav>

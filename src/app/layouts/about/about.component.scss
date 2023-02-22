@@ -1,5 +1,5 @@
 section {
-    height: 80vh;
+    height: 60vh;
     background-image: url(../../../assets/img/about/1.svg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -37,6 +37,9 @@ section::before {
     margin: auto;
 }
 
+.section-header::before {
+    background: #fff !important;
+}
 
 .description {
     width: 70%;

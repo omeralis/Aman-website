@@ -21,10 +21,13 @@ li.icon{
     padding: 0.5rem;
     border-radius: 50%;
     box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0e3, 0 1px 2px 0 rgb(60 64 67 / 0%), 0 1px 3px 1px rgb(60 64 67 / 22%) !important;
-    .fb{
-        width: 12px;
+    img{
+        width: 100%;
         display: flex;
         margin: auto;
+    }
+    &:hover{
+        box-shadow: 1px 0 20px 10px #79808f, inset -1px 0 0 rgb(218 220 224 / 89%), 0 1px 2px 0 rgb(60 64 67 / 0%), 0 1px 3px 1px rgb(60 64 67 / 22%) !important;
     }
 }
 li.menu{
@@ -34,8 +37,9 @@ li.menu{
     background-color:var(--white);
     width: 100px;
     height: 100px;
+    font-weight: bold;
     border-radius: 50%;
-    box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0e3, 0 1px 2px 0 rgb(60 64 67 / 0%), 0 1px 3px 1px rgb(60 64 67 / 22%) !important;
+    box-shadow: 0px 0px 20px 3px #000000, -1px 0 10px 12px rgb(0 0 0 / 0%), 0 1px 2px 0 rgb(60 64 67 / 0%), 0 1px 3px 1px rgb(60 64 67 / 22%) !important;
 }
 
 ::ng-deep.modal.show .modal-dialog{

@@ -12,6 +12,7 @@ import { FooterComponent } from './shared/component/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './shared/component/menu/menu.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     AppRoutingModule,
     FormsModule,
     NgbModalModule,
+    CarouselModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
