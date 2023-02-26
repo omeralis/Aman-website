@@ -45,6 +45,8 @@ import {
   faInfo,
   faGear,
   faCalendarCheck,
+  faPlay,
+  faPause
 } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
@@ -93,7 +95,9 @@ export class IconsModule {
       faUserPen,
       faInfo,
       faGear,
-      faCalendarCheck
+      faCalendarCheck,
+      faPlay,
+      faPause
     );
   }
 }

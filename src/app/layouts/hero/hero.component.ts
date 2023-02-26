@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -6,6 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent {
-	images = [8, 9, 10].map((n) => `../../../assets/img/Hero/${n}.jpg`);
+  @ViewChild('myVideo') myVideo: ElementRef | any;
+  isPlay: boolean = false;
 
+  images = [8, 9, 10].map((n) => `../../../assets/img/Hero/${n}.jpg`);
+
+  playVideo() {
+    if (!this.isPlay) this.isPlay = false;
+    this.isPlay = !this.isPlay;
+    if (this.isPlay) {
+      this.myVideo.nativeElement.pause();
+    } else {
+      this.myVideo?.nativeElement.play();
+    }
+  }
 }

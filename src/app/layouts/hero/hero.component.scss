@@ -2,34 +2,117 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
+
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  align-items: center;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // justify-content: center;
+  // align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600px;
+    width: 50%;
+    display: flex;
+    margin: auto;
+  }
 }
-.title{
+
+.title {
   text-align: center;
   margin-top: -65px;
   // h1{
   //   font-size: 3.5rem;
   // }
+
+}
+
+.text-content {
+  margin-top: 20% !important;
 }
 
 button.btn.contact-btn {
-  background-color:transparent;
-  color: var(--black);
-  border: 1px solid !important;
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid !important;
   border-color: var(--white);
   transition: color .5s ease;
   border-radius: 30px;
   transition: background-color .5s ease;
-  margin: auto;
+  margin: 1.5rem auto;
   display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+
   &:hover {
-      color: var(--black);
-      background-color: transparent;
+    color: var(--white);
+    background-color: transparent;
+  }
+}
+
+.back-video {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   z-index: -1;
+// }
+@media (min-aspect-ratio:16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio:16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+a {
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+  color: #ffffff !important;
+  left: 120px;
+  z-index: 1024;
+}
+
+
+@media (max-width: 768px) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+  @media (min-aspect-ratio:16/9){
+    .back-video{
+      width:auto;
+      height:100%;
+    }
+  }
+  @media (max-aspect-ratio:16/9){
+    .back-video{
+      width:auto;
+      height: 100%;
+    }
+  }
+  .content h1 {
+    width: 100%;
+  }
+
+  .text-content {
+    margin-top: 100px !important;
   }
 }

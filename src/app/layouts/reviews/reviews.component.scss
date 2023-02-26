@@ -28,8 +28,8 @@ input[type=radio] {
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
-    // flex-direction: column;
-    // align-items: center;
+    // flelumn;
+    // align-items: center;x-direction: co
 }
 
 .cards {
@@ -209,4 +209,56 @@ img {
 
 #item-5:checked~.player #test {
     transform: translateY(-100px);
+}
+
+
+@media (max-width: 768px) {
+    #reviews {
+        // height: auto;
+        // display: none;
+    }
+
+    .container {
+        width: unset;
+        max-height: unset;
+        height: unset;
+        transform-style: unset;
+        display: unset;
+        justify-content: unset;
+    }
+
+    .content-card {
+        grid-template-columns: 95% 5%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .content-card .card-icon {
+        width: 25px;
+        height: 50px;
+    }
+
+    .content-card .card-desc h3 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .content-card .card-desc p {
+        text-align: end;
+        margin: unset;
+        font-size: 0.9rem;
+    }
+
+    .rate{
+        letter-spacing: 0;
+    }
+    #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+        transform: translatex(-60%) scale(0.7);
+    }
+    #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+        transform: translatex(0) scale(0.8);
+    }
+    #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+        transform: translatex(44%) scale(0.7);
+    }
 }

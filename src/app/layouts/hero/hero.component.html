@@ -1,19 +1,30 @@
 <section id="hero">
   <div class="container">
     <div class="content">
-      <div class="img-left">
+      <!-- <div class="img-left">
         <img src="../../../assets/img/Hero/2.svg" alt="" srcset="">
-      </div>
-      <div class="title">
+      </div> -->
+      <video  loop plays-inline class="back-video" #myVideo>
+        <source src="https://cdn.moooi.com/assets/Web-Items/Videos/DEZEEN_Front_Design_Dreams_NO_BUMPERS.mp4" type="video/mp4">
+        <!--autoplay <source src="../../../assets/video/2.mp4" type="video/mp4"> -->
+      </video>
+      <!-- <div class="title"> -->
+      <div class="text-content">
         <h1>
           YOUR AMBITION
           OUR VISION
         </h1>
         <button type="button" class="btn contact-btn">Contact us</button>
       </div>
-      <div class="img-rigth">
+
+      <!-- </div> -->
+      <!-- <div class="img-rigth">
         <img src="../../../assets/img/Hero/1.svg" alt="" srcset="">
-      </div>
+      </div> -->
+      <a (click)="playVideo()">
+         <fa-icon icon="play" *ngIf="isPlay"></fa-icon>
+         <fa-icon icon="pause" *ngIf="!isPlay"></fa-icon>
+        </a>
     </div>
   </div>
 

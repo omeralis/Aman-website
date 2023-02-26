@@ -7,8 +7,35 @@
 img{
     width: 100%;
 }
+.main-img{
+    animation: spin-main 3s linear infinite; 
+}
 .sub-img{
     width: 80%;
     display: flex;
     margin: auto;
+    animation: spin-sub 3s linear infinite; 
+
+}
+
+@keyframes spin-main{
+    0%{ transform: translateX(0); opacity: 0%;}
+    25%{ transform: translateX(-25px); opacity: 100%;}
+    50%{ transform: translateX(-50px); opacity: 100%;}
+    75%{ transform: translateX(-75px); opacity: 100%;}
+    100%{ transform: translateX(-100px);opacity: 0%;}
+}
+
+@keyframes spin-sub{
+    0%{ transform: translateX(0); opacity: 0%;}
+    25%{ transform: translateX(25px); opacity: 100%;}
+    50%{ transform: translateX(50px); opacity: 100%;}
+    75%{ transform: translateX(75px); opacity: 100%;}
+    100%{ transform: translateX(100px);opacity: 0%;}
+}
+
+@media (max-width: 768px) {
+    #marketing{
+        padding: 1rem;
+    }
 }

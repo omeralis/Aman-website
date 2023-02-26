@@ -11,9 +11,13 @@ import { ClientComponent } from './client/client.component';
 import { MarketingComponent } from './marketing/marketing.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
-
-
+// Add these two
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+// Export this function
+export function playerFactory(): any {  
+  return import('lottie-web');
+}
 @NgModule({
   declarations: [
     HeroComponent,
@@ -29,7 +33,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     CommonModule,
     LayoutsRoutingModule,
     IconsModule,
-    CarouselModule
+    CarouselModule,
+    LottieModule.forRoot({ player: playerFactory })
   ]
 })
 export class LayoutsModule { }

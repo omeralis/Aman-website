@@ -1,3 +1,6 @@
+section{
+    display: none;
+}
 ul{
     display: flex;
     justify-content: center;
@@ -21,6 +24,7 @@ li.icon{
     padding: 0.5rem;
     border-radius: 50%;
     box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0e3, 0 1px 2px 0 rgb(60 64 67 / 0%), 0 1px 3px 1px rgb(60 64 67 / 22%) !important;
+    transition: all .4s ease;
     img{
         width: 100%;
         display: flex;
@@ -40,10 +44,36 @@ li.menu{
     font-weight: bold;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 3px #000000, -1px 0 10px 12px rgb(0 0 0 / 0%), 0 1px 2px 0 rgb(60 64 67 / 0%), 0 1px 3px 1px rgb(60 64 67 / 22%) !important;
+    transition: all .4s ease;
+    &:hover{
+        transform: scale(1.1);
+    box-shadow: 0px 0px 20px 3px #00000036, -1px 0 10px 12px rgba(255, 255, 255, 0), 0 1px 2px 0 rgba(255, 255, 255, 0), 0 1px 3px 1px rgba(255, 255, 255, 0.22) !important;
+
+    }
 }
 
 ::ng-deep.modal.show .modal-dialog{
     display: flex;
     align-items: center;
     min-height: calc(100% - var(--bs-modal-margin) * 2);
+}
+
+::ng-deep.modal-dialog {
+    width: 20rem !important;
+    height: 40vh!important;
+}
+.modal-body {
+    height: 50vh !important;
+    width: 20rem !important;
+}
+::ng-deep.modal-content {
+    width: auto !important;
+    justify-content: center !important;
+    margin: auto !important;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--white);
+    box-shadow: 6px 4px 11px rgb(0 0 0 / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%), inset -1px -1px 0.5px rgb(0 0 0 / 19%);
+    background: linear-gradient(270deg,rgba(33,33,33,.6) 14.44%,rgba(70,69,67,.6) 93.61%),#000;
 }

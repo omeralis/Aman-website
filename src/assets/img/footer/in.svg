@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.08 12.08">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-1" x=".24" y="4.03" width="2.49" height="8.06"/>
+    <path class="cls-1" d="m1.47,2.97c.81,0,1.47-.67,1.47-1.49s-.66-1.49-1.47-1.49S0,.67,0,1.49s.66,1.49,1.47,1.49Z"/>
+  </g>
+  <path class="cls-1" d="m6.72,7.86c0-1.13.52-1.81,1.52-1.81.92,0,1.36.65,1.36,1.81v4.23h2.48v-5.1c0-2.16-1.22-3.2-2.93-3.2s-2.43,1.33-2.43,1.33v-1.09h-2.39v8.06h2.39v-4.23Z"/>
+</svg>

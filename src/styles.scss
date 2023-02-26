@@ -31,7 +31,7 @@
     /* black */
     --paragraph: #213242;
     --black: #000000;
-
+    --hover:#ba9c60;
     // --font-family: Scheherazade;
     --font-family:  Cairo;
 }
@@ -79,7 +79,7 @@ body {
     bottom: -4px;
     left: calc(50% - 100px);
     border-radius: 50px;
-    transition: all 1s ease-in;
+    transition: all 3s ease-in;
 }
 .section-header:hover::after {
     left: calc(66% - 100px);
@@ -91,13 +91,19 @@ body {
     text-transform: uppercase;
     text-align: center;
     // font-weight: 100;
-    font-family: 'open-sans-bold'
+    font-family: 'open-sans-bold';
+    transition: all 0.5s ease-in;
+    &:hover{
+        color: var(--hover);
+    }
 }
 
 @media (max-width: 992px) {
     section {
         height: 100%;
+        background-attachment: unset;
     }
+    
 }
 
 // .loader{

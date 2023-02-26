@@ -13,7 +13,13 @@ import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './shared/component/menu/menu.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
+// Add these two
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+// Export this function
+export function playerFactory(): any {  
+  return import('lottie-web');
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +35,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     FormsModule,
     NgbModalModule,
     CarouselModule,
+    LottieModule.forRoot({ player: playerFactory }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

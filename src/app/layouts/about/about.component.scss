@@ -37,8 +37,44 @@ section::before {
     margin: auto;
 }
 
+.section-header {
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    cursor: pointer;
+    font-family: 'Cairo'
+}
+
 .section-header::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 2px;
     background: #fff !important;
+    bottom: 0;
+    left: calc(50% - 100px);
+}
+
+
+.section-header::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 10px;
+    background:url(../../../assets/img/about/Layer_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: -4px;
+    left: calc(50% - 100px);
+    border-radius: 50px;
+    transition: all 3s ease-in;
+}
+.section-header:hover::after {
+    left: calc(64% - 100px);
+    transform: scaleY(1);
 }
 
 .description {
@@ -55,3 +91,9 @@ section::before {
     }
 }
 
+@media (max-width: 768px) {
+    section {
+        height: 75vh;
+        background-size: cover;
+    } 
+}

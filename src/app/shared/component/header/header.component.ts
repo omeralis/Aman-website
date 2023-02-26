@@ -11,13 +11,13 @@ export class HeaderComponent {
   positionScroll =50;
   visibilityCompare: boolean = false;
   public navbarCollapsed = true;
-  langStart='ar';
+  langStart='en';
   bntLang :boolean = true;
   constructor(private translateService: TranslateService ,
     @Inject(DOCUMENT) private document: Document,
      private viewportScroller: ViewportScroller) {
       translateService.addLangs(['ar', 'en']);
-      translateService.setDefaultLang('ar');
+      translateService.setDefaultLang('en');
      }
 
   ngOnInit(): void {

@@ -1,14 +1,19 @@
 import { Component, HostListener } from '@angular/core';
+import { AnimationItem } from "lottie-web";
+import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
 })
-export class AboutComponent {
+export class AboutComponent  {
   positionScroll =550;
   visibilityCompare: boolean = false;
-
+  
+  options: AnimationOptions = {    
+    path: '../../../assets/lottie/background-Aman.json'  
+  }; 
   // @HostListener('document:mousewheel', ['$event'])
   @HostListener('window:scroll', ['$event']) 
   scrollTop(event: any) {
@@ -22,4 +27,9 @@ export class AboutComponent {
   scrollToElement(element: any): void {
     element.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
   }
+
+    // This is the component function that binds to the animationCreated event from the package  
+    onAnimate(animationItem: AnimationItem): void {    
+      console.log(animationItem);  
+    }
 }
