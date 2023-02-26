@@ -2,3 +2,68 @@
     height: 100vh;
     // padding: 0 0 60px 0;
 }
+.description{
+    text-align: center;
+    font-weight: 600;
+}
+.form-control{
+    background-color: var(--secondary);
+}
+  input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s;
+    border-bottom: 1px solid #bebed2;
+  }
+  input:focus {
+    border-bottom: 1px solid #78788c;
+  }
+  p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a;
+  }
+  button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 20px;
+  }
+  button:hover {
+    background: var(--secondary);
+    color: var(--hover);
+    border: 1px solid var(--hover);
+  }
+
+  .responsive-map{
+    overflow: hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .responsive-map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+    @media (max-width: 992px) {
+        #contact {
+            height: 100%;
+        }
+    }

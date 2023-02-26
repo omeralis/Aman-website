@@ -94,6 +94,7 @@ ul li a {
     transition: all 1s ease-in;
     &:hover{
         background: var(--hover);
+        border: none;
     }
    img{
     width: 15px;

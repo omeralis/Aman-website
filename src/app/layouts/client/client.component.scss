@@ -49,13 +49,32 @@
     border-radius: 50%;
     // transform: scale(1.1);
     box-shadow: 0px 0px 13px 0 rgb(0 0 0 / 21%), 0 0 0 0 rgb(255 255 255 / 0%), 0 1px 2px 0 rgb(255 255 255 / 0%), 0 0px 0px 0px rgb(255 255 255 / 22%) !important;
-    transition: transform .4s ease;
+    transition: all .4s ease;
     &:hover{
+        // animation: spin 3s infinite linear;
+        box-shadow: 2px 1px 20px 6px var(--hover) !important;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.1);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.1);
+        transition: all 200ms ease-in;
         transform: scale(1.1);
-        animation: spin 3s infinite linear;
     }
     img{
         width: 60%;
+        transition: all .4s ease;
+        &:hover{
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1.1);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1.1);   
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1.1);
+            transition: all 200ms ease-in;
+            transform: scale(1.1);
+        }
     }
     // .img-custom{
     //     width: 55%;
@@ -92,23 +111,34 @@
     color: var(--black);
     font-size: 70px;
     line-height: 65px;
+    cursor: pointer;
+    &:hover{
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.1);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.1);
+        transition: all 200ms ease-in;
+        transform: scale(1.1);
+    }
 }
 
-// .cards:first-child h4 {
-//     color: #e4a600;
-// }
+.cards:first-child h4 {
+    color: #e4a600;
+}
 
-// .cards:last-child h4 {
-//     color: #c81010;
-// }
+.cards:last-child h4 {
+    color: #c81010;
+}
 
-// .cards:nth-child(2) h4 {
-//     color: #48b84b;
-// }
+.cards:nth-child(2) h4 {
+    color: #48b84b;
+}
 
-// .cards:nth-child(3) h4 {
-//     color: #28a5df;
-// }
+.cards:nth-child(3) h4 {
+    color: #28a5df;
+}
 
 .cards p {
     color: #fff;
