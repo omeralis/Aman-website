@@ -16,6 +16,15 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 // Add these two
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
+import { HeroComponent } from './layouts/hero/hero.component';
+import { AboutComponent } from './layouts/about/about.component';
+import { HomeComponent } from './layouts/home/home.component';
+import { ServicesComponent } from './layouts/services/services.component';
+import { ReviewsComponent } from './layouts/reviews/reviews.component';
+import { ClientComponent } from './layouts/client/client.component';
+import { MarketingComponent } from './layouts/marketing/marketing.component';
+import { ContactComponent } from './layouts/contact/contact.component';
+import { IconsModule } from './shared/icons/icons.module';
 // Export this function
 export function playerFactory(): any {  
   return import('lottie-web');
@@ -26,6 +35,14 @@ export function playerFactory(): any {
     HeaderComponent,
     FooterComponent,
     MenuComponent,
+    HeroComponent,
+    AboutComponent,
+    HomeComponent,
+    ServicesComponent,
+    ReviewsComponent,
+    ClientComponent,
+    MarketingComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +52,7 @@ export function playerFactory(): any {
     FormsModule,
     NgbModalModule,
     CarouselModule,
+    IconsModule,
     LottieModule.forRoot({ player: playerFactory }),
     TranslateModule.forRoot({
       loader: {

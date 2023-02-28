@@ -1,5 +1,41 @@
 {
-    "navbar": {
-        "Home": "الرئيسية"
+    "hero": {
+        "content-title": "YOUR AMBITION OUR VISION",
+        "btn-header": "DIGITAL MARKETING AGENCY",
+        "btn-contact": "Contact Us"
+    },
+    "about": {
+        "About": "حول أمان",
+        "title-about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, reprehenderit quos, nulla omnis unde veniam atque odio officia earum quia sunt deleniti magnam nemo eligendi illo vero, sequi excepturi perspiciatis.        "
+    },
+    "services": {
+        "service": "خدماتنا"
+    },
+    "client": {
+        "our-client": "العملاء",
+        "client": "العملاء",
+        "projects":"المشاريع"
+    },
+    "reviews": {
+        "reviews": "reviews",
+        "title-card": "Lorem ipsum dolor sit amet",
+        "content-card": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    "contact": {
+        "contact": "إتصل بنا",
+        "content-contact": "OUR FRIENDLY TEAM WOULD LOVE TO HEAR FROM YOU",
+        "name":"الإسم",
+        "email":"البريد الإلكتروني",
+        "phone":"الهاتف",
+        "message":"المحتوي",
+        "btn-send":"إرسال"
+
+    },
+    "footer": {
+        "Home": "الرئيسية",
+        "About": "حول",
+        "services": "خدماتنا",
+        "contact": "اتصل بنا",
+        "content-footer": "AMAN MEDIA DIGITAL MARKETING AGENCY"
     }
 }

@@ -1,5 +1,41 @@
 {
-    "navbar": {
-        "Home":"Home"
+    "hero": {
+        "content-title": "YOUR AMBITION OUR VISION",
+        "btn-header": "DIGITAL MARKETING AGENCY",
+        "btn-contact": "Contact Us"
+    },
+    "about": {
+        "About": "About us",
+        "title-about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, reprehenderit quos, nulla omnis unde veniam atque odio officia earum quia sunt deleniti magnam nemo eligendi illo vero, sequi excepturi perspiciatis.        "
+    },
+    "services": {
+        "service": "Our services"
+    },
+    "client": {
+        "our-client": "Our Client",
+        "client": "Client",
+        "projects":"projects"
+    },
+    "reviews": {
+        "reviews": "reviews",
+        "title-card": "Lorem ipsum dolor sit amet",
+        "content-card": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    "contact": {
+        "contact": "Our contact",
+        "content-contact": "OUR FRIENDLY TEAM WOULD LOVE TO HEAR FROM YOU",
+        "name":"Name",
+        "email":"Email",
+        "phone":"Phone",
+        "message":"Message",
+        "btn-send":"Send Message"
+
+    },
+    "footer": {
+        "Home": "Home",
+        "About": "About us",
+        "services": "our services",
+        "contact": "contact us",
+        "content-footer": "AMAN MEDIA DIGITAL MARKETING AGENCY"
     }
 }
