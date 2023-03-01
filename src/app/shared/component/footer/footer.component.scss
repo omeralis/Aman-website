@@ -108,3 +108,21 @@ h6{
     text-transform: uppercase;
     color: var(--white);
 }
+
+@media (max-width: 768px) {
+    .logo{
+        margin: auto;
+    }
+    .desc {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    ul{
+        width: 100%;
+        padding: 0;
+        margin: 15px auto;
+        li{
+            margin: 8px;
+        }
+    }
+}

@@ -7,6 +7,7 @@
 #header {
   padding-top: 0;
   transition: all 0.5s;
+  position: relative;
   z-index: 1024;
   font-family: var(--font-family);
   background-color: transparent;
@@ -171,9 +172,10 @@ a>span:after {
 .header-scrolled .nav-link.active {
   color: var(--white);
 }
-.btn-top{
+
+.btn-top {
   display: flex;
-  
+
   button.btn.digital-btn {
     position: relative;
     background-color: transparent;
@@ -183,7 +185,7 @@ a>span:after {
     transition: color .5s ease;
     border-radius: 30px;
     transition: background-color .5s ease;
-  
+
     &::before {
       content: "";
       position: absolute;
@@ -197,9 +199,11 @@ a>span:after {
       border-radius: 30px;
       transition: all 250ms ease-in;
     }
+
     &:hover::before {
       animation: icon-border 10s infinite alternate;
-     }
+    }
+
     // &::after {
     //   content: "";
     //   position: absolute;
@@ -214,38 +218,42 @@ a>span:after {
     //   animation: border-top-right 4s infinite alternate;
     //   transition: all 250ms ease-in;
     // }
-  
+
     // &:hover::after {
     //     color: var(--white);
     //     background-color: transparent;
     //     left: calc(66% - 100px);
     //     // transform: scaleY(1);
     // animation: border-top-right 4s infinite alternate;
-  
+
     // }
-  
+
   }
 }
 
 
-@keyframes icon-border{
-  0%{
+@keyframes icon-border {
+  0% {
     left: 0;
     top: -5px;
   }
-  25%{
+
+  25% {
     left: 240px;
     top: -5px;
   }
-  50%{
+
+  50% {
     top: 30px;
     margin-left: 20px;
   }
-  75%{
+
+  75% {
     top: 35px;
-     margin-left: -20px;
+    margin-left: -20px;
   }
-  100%{
+
+  100% {
     left: 0;
     top: -5px;
   }
@@ -254,9 +262,10 @@ a>span:after {
 
 
 
-.nav-lang{
+.nav-lang {
   padding: 0 60px;
 }
+
 .sl-nav {
   display: inline;
 }
@@ -358,4 +367,29 @@ a>span:after {
   background-size: cover !important;
   background-position: center center;
   background: url('../../../../assets/img/lang/ar.png');
+}
+
+@media (max-width: 768px) {
+  .header-mobile {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .navbar-brand {
+    order: 1;
+  }
+
+  .box-media {
+    order: 3;
+    width: 270px;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-lang {
+    order: 2;
+    padding: 0;
+    justify-content: end;
+  }
 }

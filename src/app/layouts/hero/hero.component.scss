@@ -5,34 +5,34 @@
 
 }
 
+
 .content {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr 1fr;
-  // justify-content: center;
-  // align-items: center;
-  text-align: center;
-
-  h1 {
-    font-size: 60px;
-    color: #fff;
-    font-weight: 600px;
-    width: 50%;
-    display: flex;
-    margin: auto;
-  }
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.title {
+h1 {
+  margin-bottom: -30px;
+  font-size: 64px;
+  color: var(--white);
+  width: 60%;
   text-align: center;
-  margin-top: -65px;
-  // h1{
-  //   font-size: 3.5rem;
-  // }
-
+  display: flex;
+  margin: auto;
 }
 
-.text-content {
-  margin-top: 20% !important;
+.content video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 button.btn.contact-btn {
@@ -54,33 +54,6 @@ button.btn.contact-btn {
   }
 }
 
-.back-video {
-  width: auto;
-  height: auto;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   z-index: -1;
-// }
-@media (min-aspect-ratio:16/9){
-  .back-video{
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-aspect-ratio:16/9){
-  .back-video{
-    width: auto;
-    height: 100%;
-  }
-}
 a {
   cursor: pointer;
   position: absolute;
@@ -92,27 +65,8 @@ a {
 
 
 @media (max-width: 768px) {
-  .back-video {
-    width: auto;
-    height: 100%;
-  }
-  @media (min-aspect-ratio:16/9){
-    .back-video{
-      width:auto;
-      height:100%;
-    }
-  }
-  @media (max-aspect-ratio:16/9){
-    .back-video{
-      width:auto;
-      height: 100%;
-    }
-  }
-  .content h1 {
-    width: 100%;
-  }
-
-  .text-content {
-    margin-top: 100px !important;
+  h1 {
+    font-size: 30px;
+    width: 80%;
   }
 }

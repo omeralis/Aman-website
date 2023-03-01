@@ -10,14 +10,14 @@
             <div class="row">
 
                 <div class="col-md-6">
-                    <form class="form">
-                        <input type="text" placeholder="{{'contact.name' | translate }}" />
-                        <input type="text" placeholder="{{'contact.email' | translate }}" />
-                        <input type="text" placeholder="{{'contact.phone' | translate }}" />
-                        <p type="Message"><textarea class="form-control" id="exampleFormControlTextarea1"
+                    <form class="form" [formGroup]="myForm"  (ngSubmit)="onSubmitContact()">
+                        <input type="text"  formControlName="name" placeholder="{{'contact.name' | translate }}" />
+                        <input type="email"  formControlName="email" placeholder="{{'contact.email' | translate }}" />
+                        <input type="text"  formControlName="phone" placeholder="{{'contact.phone' | translate }}" />
+                        <p type="Message"><textarea  formControlName="message" class="form-control" id="exampleFormControlTextarea1"
                                 rows="3"></textarea></p>
 
-                        <button type="button" class="btn">{{'contact.btn-send' | translate }}</button>
+                        <button type="button" class="btn" (click)="onSubmitContact()">{{'contact.btn-send' | translate }}</button>
                     </form>
                 </div>
 
