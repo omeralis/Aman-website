@@ -142,7 +142,10 @@ a>span:after {
   width: 50px;
   margin: 2px 10px;
 }
-
+i.fa.fa-caret-down {
+  font-size: 20px;
+  margin: 0 5px;
+}
 .header-scrolled .nav-link {
   color: var(--white);
 
@@ -197,12 +200,13 @@ a>span:after {
       // bottom: 15px;
       left: calc(55% - 100px);
       border-radius: 30px;
+      animation: icon-border 10s infinite alternate;
       transition: all 250ms ease-in;
     }
 
-    &:hover::before {
-      animation: icon-border 10s infinite alternate;
-    }
+    // &:hover::before {
+    //   animation: icon-border 10s infinite alternate;
+    // }
 
     // &::after {
     //   content: "";
@@ -239,7 +243,7 @@ a>span:after {
   }
 
   25% {
-    left: 240px;
+    left: 238px;
     top: -5px;
   }
 
