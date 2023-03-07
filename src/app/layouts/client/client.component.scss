@@ -1,6 +1,6 @@
 #client {
     height: 100vh;
-    padding: 60px;
+    padding: 30px;
 }
 
 .box-content {
@@ -18,7 +18,10 @@
 
 .service-header {
     position: relative;
-    top: 30px;
+    top: 40px;
+    h6{
+        font-weight: bold;
+    }
 }
 
 .box h4 {
@@ -110,7 +113,7 @@
 .cards h4 {
     color: var(--black);
     font-size: 70px;
-    line-height: 65px;
+    line-height: 100px;
     cursor: pointer;
     &:hover{
         -webkit-transition: all 200ms ease-in;
@@ -124,21 +127,21 @@
     }
 }
 
-.cards:first-child h4 {
-    color: #e4a600;
-}
+// .cards:first-child h4 {
+//     color: #e4a600;
+// }
 
-.cards:last-child h4 {
-    color: #c81010;
-}
+// .cards:last-child h4 {
+//     color: #c81010;
+// }
 
-.cards:nth-child(2) h4 {
-    color: #48b84b;
-}
+// .cards:nth-child(2) h4 {
+//     color: #48b84b;
+// }
 
-.cards:nth-child(3) h4 {
-    color: #28a5df;
-}
+// .cards:nth-child(3) h4 {
+//     color: #28a5df;
+// }
 
 .cards p {
     color: #fff;

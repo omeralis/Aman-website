@@ -47,7 +47,7 @@ body {
 }
 
 .section-header {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     position: relative;
     padding-bottom: 10px;
     padding-top: 20px;
@@ -60,7 +60,7 @@ body {
     position: absolute;
     display: block;
     width: 200px;
-    height: 2px;
+    height: 1px;
     background: var(--black);
     bottom: 0;
     left: calc(50% - 100px);
@@ -79,7 +79,7 @@ body {
     bottom: -4px;
     left: calc(50% - 100px);
     border-radius: 50px;
-    transition: all 3s ease-in;
+    transition: all 4s ease-in;
 }
 .section-header:hover::after {
     left: calc(66% - 100px);

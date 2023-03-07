@@ -9,7 +9,12 @@
         "title-about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, reprehenderit quos, nulla omnis unde veniam atque odio officia earum quia sunt deleniti magnam nemo eligendi illo vero, sequi excepturi perspiciatis.        "
     },
     "services": {
-        "service": "خدماتنا"
+        "service": "خدماتنا",
+        "EventManagement":"Event Management",
+        "WebsiteDeveloper":"WEBSITE  DEVELOPER",
+        "DigitalMarketing":"Digital marketing",
+        "GraphicDesign":"Graphic design",
+        "StartUp":"Start up"
     },
     "client": {
         "our-client": "العملاء",
