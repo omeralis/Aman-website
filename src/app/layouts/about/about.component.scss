@@ -124,7 +124,7 @@ section .wave.wave4{
     position: absolute;
     display: block;
     width: 30px;
-    height: 10px;
+    height: 9px;
     background:url(../../../assets/img/about/Layer_1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -154,7 +154,7 @@ section .wave.wave4{
 
 @media (max-width: 768px) {
     section {
-        height: 75vh;
+        height: 80vh;
         background-size: cover;
     } 
 }

@@ -1,6 +1,7 @@
 #contact {
     height: 100vh;
     padding: 30px;
+    background-color: var(--secondary);
 }
 .description{
     text-align: center;
@@ -70,5 +71,8 @@
     @media (max-width: 992px) {
         #contact {
             height: 100%;
+        }
+        .description{
+          width: 100%;
         }
     }

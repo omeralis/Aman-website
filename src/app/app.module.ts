@@ -25,6 +25,8 @@ import { ClientComponent } from './layouts/client/client.component';
 import { MarketingComponent } from './layouts/marketing/marketing.component';
 import { ContactComponent } from './layouts/contact/contact.component';
 import { IconsModule } from './shared/icons/icons.module';
+import { NgParticlesModule } from 'ng-particles';
+
 // Export this function
 export function playerFactory(): any {  
   return import('lottie-web');
@@ -54,6 +56,7 @@ export function playerFactory(): any {
     NgbModalModule,
     CarouselModule,
     IconsModule,
+    NgParticlesModule,
     LottieModule.forRoot({ player: playerFactory }),
     TranslateModule.forRoot({
       loader: {
