@@ -1,0 +1,109 @@
+#contact {
+  // height: 100vh;
+  padding: 60px 0;
+  background-color: var(--secondary);
+}
+
+.description {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 30px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 30%;
+}
+
+.form-control {
+  background-color: var(--secondary);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: var(--font-family);
+  transition: all 0.3s;
+  border-bottom: 1px solid #bebed2;
+}
+
+input:focus {
+  border-bottom: 1px solid #78788c;
+}
+
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0 10px;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.text-message {
+  margin: -10px 10px 10px 10px;
+  color: #757575;
+}
+
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: var(--font-family);
+  border: 1px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 0px;
+}
+
+button:hover {
+  background-color: black;
+  color: var(--white);
+  border-color: #000000;
+  transition: all .5s ease;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.responsive-map iframe {
+  // left: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  // margin: auto;
+}
+
+@media (max-width: 992px) {
+  #contact {
+    height: 100%;
+  }
+
+  .description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    margin: 15px 0;
+  }
+
+  .responsive-map iframe {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+<header id="header" class="header">
+  <nav class="navbar navbar-expand-lg" [ngClass]="header ? 'nav-header' : ''">
+    <!-- <nav class="navbar navbar-expand-lg" [ngClass]="visibilityCompare ? 'header-scrolled':'unheader-scrolled'"> -->
+    <div class="container header-mobile">
+      <a class="navbar-brand " id="logo" (click)="onClick('hero')" routerLink="/home">
+        <img src="../../../../assets/img/logo/logo.png" alt="" srcset="" [ngClass]="header ? 'd-none' : 'd-block'"
+          routerLink="/home">
+        <img src="../../../../assets/img/logo/logo-color.png" alt="" srcset="" [ngClass]="header ? 'd-block' : 'd-none'"
+          routerLink="/home">
+      </a>
+
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+      <!-- <div class="box-media" id="navbarSupportedContent">
+          <div class="btn-top m-auto">
+            <button type="button" class="btn digital-btn" [ngClass]="header ? 'btn-service' : ''">{{'hero.btn-header' | translate }}</button>
+          </div>
+        </div> -->
+      <div class="d-flex nav-lang">
+        <div class="nav-wrapper">
+            <div class="sl-nav">
+              <ul>
+                <li  [ngClass]="header ? 'service-color' : ''"> 
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                   <b>{{titleLang}}</b>
+                  <!-- <div class="triangle"></div> -->
+                  <ul>
+                    <li (click)="changeLanguage('en')">
+                        <span class="active">English</span></li>
+                    <li  (click)="changeLanguage('ar')">
+                       <span>Arabic</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+  </nav>
+
+</header>

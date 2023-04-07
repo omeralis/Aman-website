@@ -1,0 +1,225 @@
+section.background-wave {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: var(--primary);
+    overflow: hidden;
+    top: 120px;
+    // background-image: url(../../../assets/img/about/1.svg);
+
+}
+
+section.background-wave .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../../../assets/img/about/04.png);
+    background-size: 1000px 100px;
+}
+
+section.background-wave .wave.wave1 {
+    animation: animate 5s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0px;
+}
+
+section.background-wave .wave.wave2 {
+    animation: animate2 5s linear infinite;
+    z-index: 999;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: -12px;
+}
+
+section.background-wave .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 1;
+    animation-delay: -2s;
+    bottom: 15px;
+    // bottom: 40px;
+}
+
+section.background-wave .wave.wave4 {
+    animation: animate 5s linear infinite;
+    z-index: 997;
+    opacity: 1;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 900px;
+    }
+}
+
+.section-header {
+    h1 {
+        color: var(--white);
+    }
+}
+.section-header {
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 1px;
+    background: #fff !important;
+    bottom: 0;
+    left: calc(54% - 100px);
+}
+
+
+.section-header::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 9px;
+    background:url(../../../assets/img/about/Layer_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: -4px;
+    left: calc(55% - 100px);
+    border-radius: 50px;
+    transition: all 1s ease-in;
+}
+.section-header:hover::after {
+    left: calc(60% - 100px);
+    transform: scaleY(1);
+}
+/* variables */
+.our-gallery {
+    position: relative;
+    top: 120px;
+    padding-bottom: 40px;
+}
+
+.gallery {
+    --gap: 1rem;
+    --min-height: 20rem;
+    --image-background: hsla(0, 0%, 0%, 0.2);
+    --last-background: none;
+    --radius: .5rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: var(--gap);
+    margin: 100px 0;
+    pointer-events: none;
+
+    &:hover>article {
+        opacity: 0.6;
+    }
+
+    >article {
+        flex-grow: calc(var(--width) * (100000 / var(--height)));
+        flex-basis: calc(var(--min-height) * (var(--width) / var(--height)));
+        aspect-ratio: var(--width) / var(--height);
+        position: relative;
+        overflow: hidden;
+
+        border-radius: var(--radius);
+        background-color: var(--image-background);
+
+        box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 14%), 0 0 0.125rem rgb(0 0 0 / 12%);
+
+        pointer-events: auto;
+        transition: opacity 500ms linear;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        picture+details {
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: #FFF;
+            text-shadow: 0 0 2px #000;
+            padding: 1em;
+            text-align: left;
+            transition: opacity 250ms linear;
+            z-index: 2;
+
+            &>summary {
+                pointer-events: none;
+                border: none;
+                list-style: none;
+            }
+        }
+
+        &::after {
+            content: " ";
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0) 0% 80%, rgba(0, 0, 0, 0.501961) 98% 100%);
+            pointer-events: none;
+            transition: opacity 250ms linear;
+            z-index: 1;
+        }
+
+        &:hover {
+            opacity: 1;
+            box-shadow: 0 0.25rem 0.25rem rgb(0 0 0 / 14%), 0 0 0.25rem rgb(0 0 0 / 12%);
+
+            &::after {
+                opacity: 1;
+            }
+
+            picture+details {
+                opacity: 1;
+            }
+        }
+    }
+
+    &:after {
+        content: " ";
+        flex-grow: 1000000000;
+        background: var(--last-background);
+    }
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+}

@@ -1,0 +1,48 @@
+<section>
+  <ul>
+    <!-- <ul [ngClass]="visibilityCompare ? 'ul-bottom' : ''"> -->
+    <li class="icon">
+      <a href="http://www.facebook.com/amanmediagency" target="_blank">
+        <img class="fb" src="../../../../assets/img/menu/2.png" alt="" srcset=""></a>
+    </li>
+    <li class="icon">
+      <a href="https://wa.me/+971553902015" target="_blank">
+        <img src="../../../../assets/img/menu/1.png" alt="" srcset="">
+      </a>
+    </li>
+    <li class="menu" (click)="openModal(template)">
+      <a>
+        Menu
+      </a>
+    </li>
+    <li class="icon">
+      <a href="https://www.linkedin.com/company/amanmediae/" target="_blank">
+        <img src="../../../../assets/img/menu/4.png" alt="" srcset="">
+      </a>
+    </li>
+    <li class="icon">
+      <a href="https://instagram.com/amanmediae" target="_blank">
+        <img src="../../../../assets/img/menu/03.png" alt="" srcset="">
+      </a>
+    </li>
+  </ul>
+</section>
+
+
+<ng-template #template>
+  <!-- <div class="modal-header ">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="close btn-close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div> -->
+  <div class="modal-body">
+
+    <div class="link-menu">
+      <a class="link-title" routerLink="home" (click)="scroll('hero')"> {{'footer.Home' | translate }}</a>
+      <a class="link-title" routerLink="home" (click)="scroll('about')">{{'footer.About' | translate }}</a>
+      <a class="link-title" routerLink="home" (click)="scroll('service')">{{'footer.services' | translate }}</a>
+      <a class="link-title" routerLink="home" (click)="scroll('contact')">{{'footer.contact' | translate }}</a>
+    </div>
+  </div>
+</ng-template>

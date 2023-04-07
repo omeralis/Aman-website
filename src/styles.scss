@@ -1,0 +1,336 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@import '../node_modules/animate.css/animate.min.css';
+@import url(https://fonts.googleapis.com/earlyaccess/scheherazade.css);
+@import url(https://fonts.googleapis.com/css?family=Bigshot+One);
+@import url('assets/css/fonts.scss');
+@import '../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Oswald:wght@500&display=swap');
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+@import url(./assets/css/fonts.scss);
+@import url(../node_modules/animate.css/animate.min.css);
+
+/*font-family: 'Scheherazade', serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    // scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./assets/fonts/Helvetica.ttf');
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: .3px;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('./assets/fonts/Tajawal/Tajawal-Regular.ttf');
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: .3px;
+}
+:root {
+    --primary: #004E63;
+    /* blue */
+    --secondary: #F8F8F8;
+    /* gray */
+    --white: #ffffff;
+    /* white */
+    // --dark: #112d4e;
+    --dark: #36a448;
+    --dark-hover: #1b67b352;
+    /* black */
+    --paragraph: #213242;
+    --black: #000000;
+    --hover: #ba9c60;
+    // --font-family: Scheherazade;
+    --font-ar:Tajawal;
+    --font-family: Helvetica;
+}
+
+@media (max-width: 1024px) {
+    section {
+        background-attachment: fixed;
+    }
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary);
+}
+[dir=rtl] body {
+    font-family: var(--font-ar);
+}
+.content-btn {
+    margin: 1.5rem 10px !important;
+}
+
+.section-header {
+    margin-bottom: 80px;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+[dir=rtl] .section-header {
+    font-family: var(--font-ar);
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 1px;
+    background: var(--black);
+    bottom: 0;
+    left: calc(54% - 100px);
+}
+
+
+.section-header::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 9px;
+    background: url(assets/img/layer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: -4px;
+    left: calc(55% - 100px);
+    border-radius: 50px;
+    transition: all 1s ease-in;
+}
+
+.section-header:hover::after {
+    left: calc(60% - 100px);
+    transform: scaleY(1);
+}
+
+.section-header h1 {
+    // font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    // font-weight: 100;
+    font-family: var(--font-family);
+    transition: all 0.5s ease-in;
+    // &:hover{
+    //     color: var(--hover);
+    // }
+}
+[dir=rtl] .section-header h1 {
+    font-family: var(--font-ar);
+}
+[dir=rtl] .nav-title{
+    font-family: var(--font-ar) !important;
+}
+@media (max-width: 992px) {
+    section {
+        height: 100%;
+        background-attachment: unset;
+    }
+
+    .mobile-text {
+        order: 2;
+    }
+
+    .mobile-text {
+        order: 1;
+    }
+
+    .mobile-desc {
+        order: 3;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-header::after {
+        // left: calc(65% - 100px);
+        animation: headerMobile 5s infinite linear;
+    }
+
+    .section-header:hover::after {
+        // left: calc(80% - 100px);
+        animation: headerMobile 5s infinite linear;
+    }
+
+    .section-header::before {
+        left: calc(56% - 100px);
+    }
+
+    .service-header::after {
+        animation: serviceMobile 5s infinite linear;
+    }
+
+    .title-header::after {
+        animation: OurServiceMobile 5s infinite linear;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .section-header::before {
+        left: calc(60% - 100px);
+    }
+
+    .service-header::after {
+        animation: serviceMobile2 5s infinite linear;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-header::before {
+        left: calc(64% - 100px);
+    }
+
+    .service-header::after {
+        animation: serviceMobile1 5s infinite linear;
+    }
+}
+
+
+[dir=rtl] .title-header::before {
+    right: calc(19% - 100px) !important;
+}
+
+[dir=rtl] .title-header::after {
+    right: calc(21% - 100px);
+}
+
+[dir=rtl] .title-header:hover::after {
+    right: calc(30% - 100px);
+}
+
+[dir=rtl] .content-card .card-icon {
+    right: -20px;
+}
+
+[dir=rtl] .hero .content .text-content h1 {
+    width: 100% !important;
+}
+
+// [dir=rtl] .sl-nav li:hover ul {
+//     right: -55px !important;
+// }
+
+[dir=rtl] .order-marketing-title {
+    order: 2;
+}
+
+[dir=rtl] .order-marketing-img {
+    order: 1;
+}
+
+[dir=rtl] .wave {
+    animation: waveRtl 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite !important;
+}
+
+[dir=rtl] .wave:nth-of-type(2) {
+    animation: waveRtl 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite !important;
+}
+
+@keyframes waveRtl {
+    0% {
+        margin-right: 0;
+    }
+
+    100% {
+        margin-right: -1600px;
+    }
+}
+
+@keyframes headerMobile {
+    0% {
+        left: calc(55% - 100px);
+    }
+
+    50% {
+        left: calc(75% - 100px);
+    }
+
+    100% {
+        left: calc(55% - 100px);
+    }
+}
+
+@keyframes OurServiceMobile {
+    0% {
+        left: calc(35% - 100px);
+    }
+
+    50% {
+        left: calc(55% - 100px);
+    }
+
+    100% {
+        left: calc(35% - 100px);
+    }
+}
+
+@keyframes serviceMobile {
+    0% {
+        left: calc(60% - 100px);
+    }
+
+    50% {
+        left: calc(70% - 100px);
+    }
+
+    100% {
+        left: calc(60% - 100px);
+    }
+}
+
+@keyframes serviceMobile2 {
+    0% {
+        left: calc(65% - 100px);
+    }
+
+    50% {
+        left: calc(75% - 100px);
+    }
+
+    100% {
+        left: calc(65% - 100px);
+    }
+}
+
+@keyframes serviceMobile3 {
+    0% {
+        left: calc(65% - 100px);
+    }
+
+    50% {
+        left: calc(80% - 100px);
+    }
+
+    100% {
+        left: calc(65% - 100px);
+    }
+}
+
+// .loader{
+//     border: 5px solid red;
+//     border-top: 5px solid #dfdfdf;
+//     border-radius: 50%;
+//     width: 30px;
+//     height: 30px;
+//     animation: spin 2s linear infinite; 
+// }
+
+// @keyframes spin{
+//     0%{ transform: rotate(0deg);}
+//     100%{ transform: rotate(360deg);}
+// }

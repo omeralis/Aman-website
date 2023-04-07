@@ -1,0 +1,35 @@
+<section class="hero" id="hero">
+  <div class="content">
+    <!-- autoplay media="(min-width: 768px)"--> 
+    <div class="background-video" >
+      <video autoplay  loop plays-inline #myVideo oncanplay="this.play()"  onloadedmetadata="this.muted = true" >
+        <!-- <source  src="{{videoUrl}}"  type="video/mp4"> -->
+        <source  src="{{videoUrl}}"   type="video/mp4">
+      </video>
+    </div>
+<!-- 
+     <div class="background-video mobile"   *ngIf="isMobileResolution">
+      <video autoplay  loop plays-inline class="back-video "  #myVideo oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source  src="{{videoUrl}}"   type="video/mp4">
+      </video>
+    </div> -->
+
+
+    <div class="text-content animate__animated animate__fadeInUp animate__delay-1s">
+      <h1>
+        {{'hero.content-title' | translate }}
+      </h1>
+      <button type="button" class="btn contact-btn" (click)="scroll('contact')">{{'hero.btn-contact' | translate
+        }}</button>
+    </div>
+    <a class="play-video" (click)="playVideo()">
+      <fa-icon class="icon-paly" icon="play" *ngIf="isPlay"></fa-icon>
+      <fa-icon  class="icon-paly" icon="pause" *ngIf="!isPlay"></fa-icon>
+    </a>
+
+    <a class="play-audio" (click)="playVideoAudio()">
+      <fa-icon class="icon-paly" icon="volume-high" *ngIf="isPlayAudio"></fa-icon>
+      <fa-icon  class="icon-paly" icon="volume-xmark" *ngIf="!isPlayAudio"></fa-icon>
+    </a>
+  </div>
+</section>

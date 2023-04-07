@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 694.4 296.26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #edeef2;
+        mix-blend-mode: multiply;
+      }
+
+      .cls-2 {
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g class="cls-2">
+    <g id="Isolation_Mode" data-name="Isolation Mode">
+      <path class="cls-1" d="m0,282V0h615.4c6.89,4.81,13.36,9.83,19.38,15.05,185.11,160.55-91.17,189.59-413.11,281.21C41.58,215.67,0,282,0,282Z"/>
+    </g>
+  </g>
+</svg>

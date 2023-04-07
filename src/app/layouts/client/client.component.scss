@@ -1,0 +1,197 @@
+#client {
+    // height: 100vh;
+    padding: 60px 0;
+    background-color: var(--secondary);
+}
+
+.box-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.service-header {
+    position: relative;
+    top: 40px;
+    h6{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.box h4 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.content-box{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px 0;
+}
+.box-circle {
+    background-image: url(../../../assets/img/clients/4.svg);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 13px 0 rgb(0 0 0 / 21%), 0 0 0 0 rgb(255 255 255 / 0%), 0 1px 2px 0 rgb(255 255 255 / 0%), 0 0px 0px 0px rgb(255 255 255 / 22%) !important;
+    transition: all .4s ease;
+    
+    &:hover{
+        // animation: spin 3s infinite linear;
+        box-shadow: 2px 1px 20px 6px #00000020 !important;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.1);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.1);
+        transition: all 200ms ease-in;
+        transform: scale(1.1);
+    }
+    img{
+        width: 60%;
+        transition: all .4s ease;
+        &:hover{
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1.1);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1.1);   
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1.1);
+            transition: all 200ms ease-in;
+            transform: scale(1.1);
+        }
+    }
+    .img-custom{
+        width: 30%;
+    }
+}
+
+.spin {
+    animation: spin 1s infinite linear;
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+/////////////////////////// 
+/// 
+.client-count-wrp {
+    background: #353030;
+    padding: 100px 0;
+}
+
+.heading h4 {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.client-count-wrp-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards h4 {
+    color: var(--black);
+    font-size: 70px;
+    line-height: 100px;
+    cursor: pointer;
+    &:hover{
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.1);   
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.1);
+        transition: all 200ms ease-in;
+        transform: scale(1.1);
+    }
+}
+
+// .cards:first-child h4 {
+//     color: #e4a600;
+// }
+
+// .cards:last-child h4 {
+//     color: #c81010;
+// }
+
+// .cards:nth-child(2) h4 {
+//     color: #48b84b;
+// }
+
+// .cards:nth-child(3) h4 {
+//     color: #28a5df;
+// }
+
+.cards p {
+    color: #fff;
+    font-size: 20px;
+}
+
+@media (max-width:991px) {
+    #client {
+        height: 100%;
+        padding: 0;
+    }
+    .mt-100 {
+        margin-top: 30px !important;
+    }
+    .client-count-wrp {
+        padding: 40px 0;
+    }
+    .client-count-wrp-inner {
+        flex-direction: column;
+    }
+    .cards h4 {
+        font-size: 50px;
+        line-height: 40px;
+    }
+    .cards {
+        margin: 40px 0;
+    }
+    .client-count-wrp {
+        padding: 25px 0;
+        margin: 0 25px;
+    }
+    /****/
+}
+
+@media (max-width:991px) {
+    #client {
+        height: 100%;
+        padding: 1rem;
+    }
+    .client-count-wrp-inner {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .content-box{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px 0;
+    }
+    .box{
+        width: 100%;
+    }
+    .box-circle{
+        width: 100px;
+        height: 100px;
+    }
+}
